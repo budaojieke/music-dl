@@ -91,8 +91,8 @@ def run():
     # default="qq netease kugou baidu",
     help=_("支持的数据源: ") + "baidu",
 )
-@click.option("-n", "--number", default=5, help=_("搜索数量限制"))
-@click.option("-o", "--outdir", default=".", help=_("指定输出目录"))
+@click.option("-n", "--number", default=50, help=_("搜索数量限制"))
+@click.option("-o", "--outdir", default="./down/", help=_("指定输出目录"))
 @click.option("-x", "--proxy", default="", help=_("指定代理（如http://127.0.0.1:1087）"))
 @click.option("-v", "--verbose", default=False, is_flag=True, help=_("详细模式"))
 @click.option("--lyrics", default=False, is_flag=True, help=_("同时下载歌词"))

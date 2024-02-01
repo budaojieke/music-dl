@@ -94,8 +94,8 @@ class BasicSong:
 
     @property
     def name(self) -> str:
-        """ Song file name """
-        return "%s - %s.%s" % (self.singer, self.title, self.ext)
+        """ Song file name """       
+        return "%s - %s.%s" % (self.title, self.singer, self.ext)
 
     @property
     def duration(self):
